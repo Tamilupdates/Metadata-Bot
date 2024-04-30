@@ -36,11 +36,11 @@ async def query_metadata(bot: Client, query: CallbackQuery):
 
         if bool(eval(_bool)):
             await db.set_metadata(query.from_user.id, bool_meta=False)
-            await query.message.edit(f"Your Current Metadata:\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(OFF))
+            await query.message.edit(f"<b>Your Current Metadata:</b>\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(OFF))
 
         else:
             await db.set_metadata(query.from_user.id, bool_meta=True)
-            await query.message.edit(f"Your Current Metadata:\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(ON))
+            await query.message.edit(f"<b>Your Current Metadata:</b>\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(ON))
 
     elif data == 'cutom_metadata':
         await query.message.delete()
