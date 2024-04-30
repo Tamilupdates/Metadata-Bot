@@ -77,7 +77,7 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Telegram : @KPSBots" -metadata author="Telegram : @KPSBots" -metadata:s:s title="Telegram : @KPSBots" -metadata:s:a title="Telegram : @KPSBots" -metadata:s:v title="Telegram : @KPSBots" </code>
+◦ <code>Telegram : @KPSBots</code>
 """
 
     PROGRESS_BAR = """<b>\n
