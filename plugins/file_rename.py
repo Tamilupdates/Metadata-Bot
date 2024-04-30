@@ -81,7 +81,7 @@ async def doc(bot, update):
     prefix = await db.get_prefix(update.message.chat.id)
     suffix = await db.get_suffix(update.message.chat.id)
     new_name = update.message.text
-    new_filename_ = new_name.split(":-")[1]
+    new_filename_ = new_name.split(":")[1]
 
     try:
         # adding prefix and suffix

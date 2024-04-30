@@ -30,7 +30,7 @@ async def see_caption(client, message):
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     prefix = await db.get_prefix(message.from_user.id)
     if prefix:
-        await SnowDev.edit(f"**ʏᴏᴜʀ ᴘʀᴇꜰɪx:-**\n\n`{prefix}`")
+        await SnowDev.edit(f"**ʏᴏᴜʀ ᴘʀᴇꜰɪx:**\n\n`{prefix}`")
     else:
         await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇꜰɪx**__")
 
@@ -64,6 +64,6 @@ async def see_csuffix(client, message):
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     suffix = await db.get_suffix(message.from_user.id)
     if suffix:
-        await SnowDev.edit(f"**ʏᴏᴜʀ ꜱᴜꜰꜰɪx:-**\n\n`{suffix}`")
+        await SnowDev.edit(f"**ʏᴏᴜʀ ꜱᴜꜰꜰɪx:**\n\n`{suffix}`")
     else:
         await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")

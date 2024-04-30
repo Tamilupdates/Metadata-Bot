@@ -75,7 +75,7 @@ Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
     SEND_METADATA = """
 ❪ SET CUSTOM METADATA ❫
 
-☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
+☞ Fᴏʀ Exᴀᴍᴘʟᴇ:
 
 ◦ <code>Telegram : @KPSBots</code>
 """

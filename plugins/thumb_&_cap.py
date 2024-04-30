@@ -24,7 +24,7 @@ async def delete_caption(client, message):
 async def see_caption(client, message):
     caption = await db.get_caption(message.from_user.id)
     if caption:
-        await message.reply_text(f"**Yᴏᴜ'ʀᴇ Cᴀᴩᴛɪᴏɴ:-**\n\n`{caption}`")
+        await message.reply_text(f"**Yᴏᴜ'ʀᴇ Cᴀᴩᴛɪᴏɴ:**\n\n`{caption}`")
     else:
         await message.reply_text("__**😔 Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aɴy Cᴀᴩᴛɪᴏɴ**__")
 
