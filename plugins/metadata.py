@@ -20,9 +20,9 @@ async def handle_metadata(bot: Client, message: Message):
     await ms.delete()
     if bool_metadata:
 
-        return await message.reply_text(f"Your Current Metadata:-\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(ON))
+        return await message.reply_text(f"<b>Your Current Metadata:</b>\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(ON))
 
-    return await message.reply_text(f"Your Current Metadata:-\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(OFF))
+    return await message.reply_text(f"<b>Your Current Metadata:</b>\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(OFF))
 
 
 @Client.on_callback_query(filters.regex('.*?(custom_metadata|metadata).*?'))
